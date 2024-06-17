@@ -18,23 +18,50 @@
 
 <body>
     <header>
-        <a href="#" class="logo">Electro-Hogar</a>
-        <input type="checkbox" name="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon-action">
-            <box-icon name='bx bx-menu' id="menu-icon"></box-icon>
-        </label>
-        <ul class="navlist">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/acerca-de.html">Acerca de</a></li>
-            <li><a href="/sucursales.html">Sucursales</a></li>
-            <li><a href="/registrese.html">Regístrese</a></li>
-            <li><a href="/nuestros-clientes.html">Nuestros Clientes</a></li>
-            <li><a href="/contacto.html">Contacto</a></li>
-        </ul>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Electro-Hogar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Electro-Hogar</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/acerca-de.html">Acerca de</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/sucursales.html">Sucursales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/registrese.html">Regístrese</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/nuestros-clientes.html">Nuestros Clientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <section class="hero">
-            <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Formulario de registro:</p>
+            <h1 class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Formulario de registro:</h1>
 
             <form class="mx-1 mx-md-4 mt-5">
 
